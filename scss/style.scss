@@ -26,6 +26,8 @@ html {
         color: #fff;
         text-align: center;
         font-size: 32px;
+        position: relative;
+        z-index: 2;
         span{
             display: inline-flex;
             padding: 6.5px 9px;
@@ -39,9 +41,13 @@ html {
         width: 100%;
         border-radius: 10px;
         overflow: hidden;
+        z-index: 2;
         &-wrap{
             max-width: 320px;
             margin: 40px auto 0;
+            //background: #000;
+            position: relative;
+            z-index: 2;
         }
         video{
             position: absolute;
@@ -65,6 +71,8 @@ html {
         font-weight: 500;
         font-size: 14px;
         font-family: inherit;
+        position: relative;
+        z-index: 2;
         &:hover{
             opacity: .8;
         }
@@ -80,6 +88,7 @@ html {
             }
         }
         &__video{
+            border-radius: 20px;
             &-wrap{
                 max-width: 420px;
             }
