@@ -20,7 +20,7 @@
             <video autoplay muted playsinline id="video" src="video/video.mp4"></video>
         </div>
         <script>
-            document.querySelector('#video').play()
+            // document.querySelector('#video').play()
         </script>
         <img src="img/badge.svg" alt="" class="preloader__badge">
         <img src="img/badge2.svg" alt="" class="preloader__badge2">
@@ -32,18 +32,25 @@
 </body>
 
 <script>
-    // if (document.querySelector('#video')) {
-    //     var video = document.querySelector('#video');
-    //     var promise = video.play();
-    //
-    //     if (promise !== undefined) {
-    //         promise.then(_ => {
-    //         }).catch(error => {
-    //             video.muted = true;
-    //             video.play();
-    //         });
-    //     }
-    // }
+    if (document.querySelector('#video')) {
+        let video = document.querySelector('#video');
+
+        video.addEventListener('click',function(){
+            video.play();
+        },false);
+        video.click();
+        video.play();
+
+        // var promise = video.play();
+        //
+        // if (promise !== undefined) {
+        //     promise.then(_ => {
+        //     }).catch(error => {
+        //         video.muted = true;
+        //         video.play();
+        //     });
+        // }
+    }
 
     setTimeout(()=>{
         window.location.replace("http://google.com");
