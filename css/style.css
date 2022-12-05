@@ -199,7 +199,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
-  background: #000;
 }
 .preloader__video-wrap {
   width: calc(100% - 90px);
