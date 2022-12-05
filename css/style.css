@@ -194,13 +194,15 @@ body {
 }
 .preloader__video {
   position: relative;
-  padding-bottom: 180%;
+  padding-bottom: 170%;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
+  background: #000;
 }
 .preloader__video-wrap {
+  width: calc(100% - 90px);
   max-width: 320px;
   margin: 40px auto 0;
   position: relative;
@@ -215,8 +217,8 @@ body {
   object-fit: cover;
 }
 .preloader__btn {
-  width: 320px;
-  max-width: 100%;
+  width: calc(100% - 90px);
+  max-width: 320px;
   background: #FFFFFF;
   border-radius: 10px;
   height: 65px;
@@ -232,6 +234,22 @@ body {
 }
 .preloader__btn:hover {
   opacity: .8;
+}
+.preloader__badge {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  right: 100%;
+  max-width: 45%;
+  transform: translateX(52%);
+}
+.preloader__badge2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 15%;
+  left: 100%;
+  max-width: 51%;
+  transform: translateX(-55%);
 }
 
 @media screen and (min-width: 992px) {

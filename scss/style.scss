@@ -42,15 +42,16 @@ body{
     }
     &__video{
         position: relative;
-        padding-bottom: 180%;
+        padding-bottom: 170%;
         width: 100%;
         border-radius: 10px;
         overflow: hidden;
         z-index: 2;
+        background: #000;
         &-wrap{
+            width: calc(100% - 90px);
             max-width: 320px;
             margin: 40px auto 0;
-            //background: #000;
             position: relative;
             z-index: 2;
         }
@@ -64,8 +65,8 @@ body{
         }
     }
     &__btn{
-        width: 320px;
-        max-width: 100%;
+        width: calc(100% - 90px);
+        max-width: 320px;
         background: #FFFFFF;
         border-radius: 10px;
         height: 65px;
@@ -81,6 +82,22 @@ body{
         &:hover{
             opacity: .8;
         }
+    }
+    &__badge{
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+        right: 100%;
+        max-width: 45%;
+        transform: translateX(52%);
+    }
+    &__badge2{
+        position: absolute;
+        z-index: 2;
+        bottom: 15%;
+        left: 100%;
+        max-width: 51%;
+        transform: translateX(-55%);
     }
 }
 
